@@ -1,58 +1,33 @@
-// list
+// logical &&
+def a = true
+def b = false
+def result = a && b  // result is false
+println result;
 
-def numbers = [1, 2, 3, 4, 5]
-def fruits = ['apple', 'banana', 'cherry']
+// logical or ||
+def a2 = true
+def b2 = false
+def res = a || b
+println res;
 
-//map
-def person = [name: 'John', age: 30, city: 'New York']
+// logical not !
+def f = true
+def result3 = !f  // result is false
+println result3;
 
-// sets
-def uniqueNumbers = [1, 2, 3, 4, 5] as Set
+//logical exclusive Or (XOR)
+def m = true
+def n = false
+def result5 = (m && !n) || (!m && n)
+println result5;
 
-//Array
-def colors = ['red', 'green', 'blue'] as String[]
+//ternairy operators
+def k = true
+def result6 = (k) ? "It's true" : "It's false"
+println result6
 
-//linkedlist
-class ListNode {
-    def value
-    ListNode next
-}
-
-def node1 = new ListNode(value: 1)
-def node2 = new ListNode(value: 2)
-node1.next = node2
-
-//Stack and queue
-def stack = []
-stack.push(1)
-stack.push(2)
-def topElement = stack.pop()
-
-def queue = []
-queue.add(1)
-queue.add(2)
-def frontElement = queue.remove(0)
-
-// tress
-class TreeNode {
-    def value
-    List<TreeNode> children = []
-}
-
-def root = new TreeNode(value: 'A')
-def child1 = new TreeNode(value: 'B')
-def child2 = new TreeNode(value: 'C')
-root.children << child1 << child2
-println root
-
-
-// graphs
-class GraphNode {
-    def value
-    List<GraphNode> neighbors = []
-}
-
-def nodeA = new GraphNode(value: 'A')
-def nodeB = new GraphNode(value: 'B')
-def nodeC = new GraphNode(value: 'C')
-nodeA.neighbors << nodeB << nodeC
+//Null Coalescing Operator (?:):
+def p = null
+def q = "Hello"
+def result7 = p ?: q  // result is "Hello"
+println result7
