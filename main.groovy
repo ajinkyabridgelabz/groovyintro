@@ -1,57 +1,58 @@
-// static keyword
-class MyClass {
-    static int staticVariable = 10
+// list
 
-    static void staticMethod() {
-        println("This is a static method")
-    }
+def numbers = [1, 2, 3, 4, 5]
+def fruits = ['apple', 'banana', 'cherry']
+
+//map
+def person = [name: 'John', age: 30, city: 'New York']
+
+// sets
+def uniqueNumbers = [1, 2, 3, 4, 5] as Set
+
+//Array
+def colors = ['red', 'green', 'blue'] as String[]
+
+//linkedlist
+class ListNode {
+    def value
+    ListNode next
 }
 
-println(MyClass.staticVariable)
-MyClass.staticMethod()
+def node1 = new ListNode(value: 1)
+def node2 = new ListNode(value: 2)
+node1.next = node2
 
-// super keyword
+//Stack and queue
+def stack = []
+stack.push(1)
+stack.push(2)
+def topElement = stack.pop()
 
-class ChildClass extends ParentClass {
-    void methodInChildClass() {
-        super.methodInParentClass()
-    }
-}
-//switch keyword
+def queue = []
+queue.add(1)
+queue.add(2)
+def frontElement = queue.remove(0)
 
-def fruit = 'apple'
-
-switch (fruit) {
-    case 'apple':
-        println('Selected fruit is apple')
-        break
-    case 'banana':
-        println('Selected fruit is banana')
-        break
-    default:
-        println('Unknown fruit')
+// tress
+class TreeNode {
+    def value
+    List<TreeNode> children = []
 }
 
-//synchronized keyword
-synchronized (someObject) {
-    // Code that should be synchronized
+def root = new TreeNode(value: 'A')
+def child1 = new TreeNode(value: 'B')
+def child2 = new TreeNode(value: 'C')
+root.children << child1 << child2
+println root
+
+
+// graphs
+class GraphNode {
+    def value
+    List<GraphNode> neighbors = []
 }
 
-// this keyword
-class Satya {
-    def name
-
-    MyClass(String name) {
-        this.name = name
-    }
-}
-
-//throw keyword
-def myMethod() {
-    if (someCondition) {
-        throw new SomeException("Some error message")
-    }
-}
-//threadsafe keyword
-def sata =
-        "threadsafe: The threadsafe keyword is not a standard Groovy keyword.it might be used in custom code or libraries toindicate that a particular piece of code is designed to be thread-safe."
+def nodeA = new GraphNode(value: 'A')
+def nodeB = new GraphNode(value: 'B')
+def nodeC = new GraphNode(value: 'C')
+nodeA.neighbors << nodeB << nodeC
