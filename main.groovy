@@ -1,8 +1,15 @@
 import org.codehaus.groovy.runtime.StringBufferWriter
 
 // Every one write down the code here
+
+
+println "Single-line comments start with // and can be found at any position in the line. The characters following //, until the end of the line, are considered part of the comment."
+// a standalone single line comment
+println "hello" // a comment till the end of the line
+
 println("Hello World")
 
+<<<<<<< HEAD
 
    println "/* */ are used for multiline comments";
 
@@ -25,3 +32,5 @@ println("Hello World")
     }
 //calling method
 max()
+=======
+>>>>>>> 1b65643611550eaf5f5383ffe21e49ce1f3e58be
