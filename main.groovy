@@ -6,9 +6,8 @@ println("Hello World")
 
    println "/* */ are used for multiline comments";
 
-
   /*
-    *In the main method ,
+    *In the max method ,
     * we are given three numbers
     * and find the largest among them
     * by using Ternary operator
@@ -18,9 +17,11 @@ println("Hello World")
     * if it is true print "b" or else
     * print "c"
      */
-    static void main(String[] args) {
+    static void max(String[] args) {
         def a=32;
         def b=45;
         def c=11;
         println(" $a ,$b, $c maximum number is :"+((a > b && a > c) ? a : (b > c) ? b : c));
     }
+//calling method
+max()
