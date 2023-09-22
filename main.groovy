@@ -9,7 +9,7 @@ println "hello" // a comment till the end of the line
 
 println("Hello World")
 
-<<<<<<< HEAD
+
 
    println "/* */ are used for multiline comments";
 
@@ -32,5 +32,4 @@ println("Hello World")
     }
 //calling method
 max()
-=======
->>>>>>> 1b65643611550eaf5f5383ffe21e49ce1f3e58be
+
